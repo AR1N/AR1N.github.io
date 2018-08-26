@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="hexo g == hexo generate   hexo d == hexo deploy hexo s == hexo server hexo n == hexo new  还能组合使用，如：hexo d -g">
+<meta name="description" content="个人头像的设置问题 官方文档是这样描述的:将头像放置主题目录下的 source/uploads/ （新建 uploads 目录若不存在)　　　　　配置为：avatar: /uploads/avatar.png 或者 放置在 source/images/ 目录下 　　　　配置为：avatar: /images/avatar.png 而这样设置，头像却显示不出来，原来是要在站点目录的source下创建">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
+<meta property="og:title" content="Hexo+github搭建博客遇到的一些问题">
 <meta property="og:url" content="http://yoursite.com/2018/08/26/test/index.html">
 <meta property="og:site_name" content="Aren&#39;s Blog">
-<meta property="og:description" content="hexo g == hexo generate   hexo d == hexo deploy hexo s == hexo server hexo n == hexo new  还能组合使用，如：hexo d -g">
+<meta property="og:description" content="个人头像的设置问题 官方文档是这样描述的:将头像放置主题目录下的 source/uploads/ （新建 uploads 目录若不存在)　　　　　配置为：avatar: /uploads/avatar.png 或者 放置在 source/images/ 目录下 　　　　配置为：avatar: /images/avatar.png 而这样设置，头像却显示不出来，原来是要在站点目录的source下创建">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-26T02:17:27.420Z">
+<meta property="og:updated_time" content="2018-08-26T04:57:51.979Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
-<meta name="twitter:description" content="hexo g == hexo generate   hexo d == hexo deploy hexo s == hexo server hexo n == hexo new  还能组合使用，如：hexo d -g">
+<meta name="twitter:title" content="Hexo+github搭建博客遇到的一些问题">
+<meta name="twitter:description" content="个人头像的设置问题 官方文档是这样描述的:将头像放置主题目录下的 source/uploads/ （新建 uploads 目录若不存在)　　　　　配置为：avatar: /uploads/avatar.png 或者 放置在 source/images/ 目录下 　　　　配置为：avatar: /images/avatar.png 而这样设置，头像却显示不出来，原来是要在站点目录的source下创建">
 
 
 
@@ -125,7 +125,7 @@
 
 
 
-  <title>test | Aren's Blog</title>
+  <title>Hexo+github搭建博客遇到的一些问题 | Aren's Blog</title>
   
 
 
@@ -293,7 +293,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">test</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo+github搭建博客遇到的一些问题</h1>
         
 
         <div class="post-meta">
@@ -318,17 +318,6 @@
           
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/08/26/test/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/08/26/test/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -359,13 +348,17 @@
       
 
       
-        <blockquote>
-<p>hexo g == hexo generate  </p>
-<p>hexo d == hexo deploy</p>
-<p>hexo s == hexo server</p>
-<p>hexo n == hexo new</p>
+        <h3 id="个人头像的设置问题"><a href="#个人头像的设置问题" class="headerlink" title="个人头像的设置问题"></a>个人头像的设置问题</h3><p> 官方文档是这样描述的:将头像放置主题目录下的 source/uploads/ （新建 uploads 目录若不存在)　　　　　配置为：avatar: /uploads/avatar.png</p>
+<p>或者 放置在 source/images/ 目录下 　　　　配置为：avatar: /images/avatar.png</p>
+<p>而这样设置，头像却显示不出来，原来是要在站点目录的source下创建uploads文件夹，将图片放在uploads下并命名为avatar.png，然后再设置站点配置文件-config.yml，在任意位置添加avatar: /upload/image/avatar.png并保存。</p>
+<h3 id="添加评论系统"><a href="#添加评论系统" class="headerlink" title="添加评论系统"></a>添加评论系统</h3><p>我使用了来必力免费的city版本，在新版nexT主题中只需编辑主题配置文件，编辑来必力中提供的uid添加到livere-uid字段livere-uid: #your livere_uid即可。而此系统在博文前不能显示评论数量，在nexT中多个评论系统是相互冲突的，只能设置一个。最后，如需取消某个页面/文章的评论，在md文件中增加 comments: false即可。</p>
+<h3 id="Hexo常用快捷键"><a href="#Hexo常用快捷键" class="headerlink" title="Hexo常用快捷键"></a>Hexo常用快捷键</h3><blockquote>
+<p>hexo clean  清除缓存</p>
+<p>hexo n “your post name” == hexo new “your post name”  新建博文 </p>
+<p>hexo g == hexo generate  生成静态文件</p>
+<p>hexo s == hexo server    运行hexo服务器</p>
+<p>hexo d == hexo deploy  部署到云端</p>
 </blockquote>
-<p><br><br><br>还能组合使用，如：<br>hexo d -g</p>
 
       
     </div>
@@ -419,12 +412,7 @@
 
   
     <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTIzNy8xNTc2NA=="></div>
     </div>
 
   
@@ -450,8 +438,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -507,6 +504,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#个人头像的设置问题"><span class="nav-number">1.</span> <span class="nav-text">个人头像的设置问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加评论系统"><span class="nav-number">2.</span> <span class="nav-text">添加评论系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo常用快捷键"><span class="nav-number">3.</span> <span class="nav-text">Hexo常用快捷键</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -685,26 +698,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://aren.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2018/08/26/test/';
-          this.page.identifier = '2018/08/26/test/';
-          this.page.title = 'test';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://aren.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -717,6 +710,21 @@
   
 
 
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
 
 
 

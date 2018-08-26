@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[test]]></title>
+    <title><![CDATA[Hexo+github搭建博客遇到的一些问题]]></title>
     <url>%2F2018%2F08%2F26%2Ftest%2F</url>
-    <content type="text"><![CDATA[hexo g == hexo generate hexo d == hexo deploy hexo s == hexo server hexo n == hexo new 还能组合使用，如：hexo d -g]]></content>
+    <content type="text"><![CDATA[个人头像的设置问题 官方文档是这样描述的:将头像放置主题目录下的 source/uploads/ （新建 uploads 目录若不存在) 配置为：avatar: /uploads/avatar.png 或者 放置在 source/images/ 目录下 配置为：avatar: /images/avatar.png 而这样设置，头像却显示不出来，原来是要在站点目录的source下创建uploads文件夹，将图片放在uploads下并命名为avatar.png，然后再设置站点配置文件-config.yml，在任意位置添加avatar: /upload/image/avatar.png并保存。 添加评论系统我使用了来必力免费的city版本，在新版nexT主题中只需编辑主题配置文件，编辑来必力中提供的uid添加到livere-uid字段livere-uid: #your livere_uid即可。而此系统在博文前不能显示评论数量，在nexT中多个评论系统是相互冲突的，只能设置一个。最后，如需取消某个页面/文章的评论，在md文件中增加 comments: false即可。 Hexo常用快捷键 hexo clean 清除缓存 hexo n “your post name” == hexo new “your post name” 新建博文 hexo g == hexo generate 生成静态文件 hexo s == hexo server 运行hexo服务器 hexo d == hexo deploy 部署到云端]]></content>
   </entry>
 </search>
