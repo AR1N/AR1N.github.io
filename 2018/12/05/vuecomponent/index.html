@@ -87,12 +87,12 @@
 <meta property="og:site_name" content="Aren&#39;s Blog">
 <meta property="og:description" content="父组件向子组件传值若父组件中的值value1:&amp;#39;这是父组件中的值&amp;#39;，要向子组件test传值。则在父组件中&amp;lt;test v-bind:parentValue=&amp;quot;value1&amp;quot;&amp;gt;&amp;lt;/test&amp;gt;上绑定自定义属性名（parentValue）的值为value1；子组件中data下定义props的值为父组件里自定义的属性名（parentValue），">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://phgha3i5k.bkt.clouddn.com/vue.png">
-<meta property="og:updated_time" content="2018-11-08T08:31:39.197Z">
+<meta property="og:image" content="http://wx3.sinaimg.cn/small/0065S8Vugy1fz8heh54abj30b40b4t9f.jpg">
+<meta property="og:updated_time" content="2019-01-16T08:00:02.052Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue组件之间传值">
 <meta name="twitter:description" content="父组件向子组件传值若父组件中的值value1:&amp;#39;这是父组件中的值&amp;#39;，要向子组件test传值。则在父组件中&amp;lt;test v-bind:parentValue=&amp;quot;value1&amp;quot;&amp;gt;&amp;lt;/test&amp;gt;上绑定自定义属性名（parentValue）的值为value1；子组件中data下定义props的值为父组件里自定义的属性名（parentValue），">
-<meta name="twitter:image" content="http://phgha3i5k.bkt.clouddn.com/vue.png">
+<meta name="twitter:image" content="http://wx3.sinaimg.cn/small/0065S8Vugy1fz8heh54abj30b40b4t9f.jpg">
 
 
 
@@ -390,7 +390,7 @@
       
 
       
-        <p><img src="http://phgha3i5k.bkt.clouddn.com/vue.png" alt="Vue.js" title="vue.js"></p>
+        <p><img src="http://wx3.sinaimg.cn/small/0065S8Vugy1fz8heh54abj30b40b4t9f.jpg" alt="Vue.js" title="vue.js"></p>
 <h4 id="父组件向子组件传值"><a href="#父组件向子组件传值" class="headerlink" title="父组件向子组件传值"></a>父组件向子组件传值</h4><p>若父组件中的值<code>value1:&#39;这是父组件中的值&#39;</code>，要向子组件<code>test</code>传值。则在父组件中<code>&lt;test v-bind:parentValue=&quot;value1&quot;&gt;&lt;/test&gt;</code>上绑定自定义属性名（parentValue）的值为value1；子组件中data下定义<code>props</code>的值为父组件里自定义的属性名（parentValue），即：<code>props:[&#39;parentValue&#39;]</code>，然后在子组件中就可以通过parentValue传递父组件的值了。</p>
 <h4 id="子组件向父组件传递数据"><a href="#子组件向父组件传递数据" class="headerlink" title="子组件向父组件传递数据"></a>子组件向父组件传递数据</h4><p>子组件主要通过事件传递数据给父组件,先在子组件中<code>demo</code>绑定事件（test），在methods中通过:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test:function()&#123;</span><br><span class="line">     this.$emit(&apos;父组件中绑定的接收方法parentMethod&apos;,this.要传递的数据）</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
 <p>在父组件中通过<code>&lt;demo v-on:parentMethod=&quot;自定义获取数据的方法getValue&quot;&gt;&lt;/demo&gt;</code>，在父组件中methods里实现方法<code>getValue(val){
